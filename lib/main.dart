@@ -19,15 +19,19 @@ class MyApp extends StatelessWidget {
           child: Row(
             children: [
               Expanded(
-                child: Padding(
-                  padding: EdgeInsets.all(20),
+                child: ElevatedButton(
+                  onPressed: () {
+                    print("Left button is pressed");
+                  },
                   child: Image.asset('images/one.png'),
                 ),
               ),
               Expanded(
-                child: Padding(
-                  padding: EdgeInsets.all(20),
+                child: ElevatedButton(
                   child: Image.asset('images/two.png'),
+                  onPressed: () {
+                    print("Right button is pressed");
+                  },
                 ),
               )
             ],
